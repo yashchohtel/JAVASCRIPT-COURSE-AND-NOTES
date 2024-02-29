@@ -107,7 +107,13 @@ output: null
 
 -----------
 
-6. Bigint
+6. Bigint - Represent integers of arbitrary precision (available since ECMAScript 2020).
+
+example :-
+
+var bigNumber = 209348752938475029384752093847520937845209384752093847502983475n;
+console.log(bigNumber);
+output: 209348752938475029384752093847520937845209384752093847502983475n;
 
 -----------
 
