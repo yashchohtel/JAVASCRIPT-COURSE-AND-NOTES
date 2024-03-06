@@ -60,7 +60,7 @@ Arrays and objects, even if they're not empty
 
 Falsy values are treated as false in boolean context EXamples include:
 false
-0 (zero)
+0 and -0 (zero)
 "" (an empty string)
 null
 undefined
