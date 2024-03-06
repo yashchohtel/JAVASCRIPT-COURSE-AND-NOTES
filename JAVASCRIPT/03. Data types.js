@@ -119,8 +119,16 @@ output: 209348752938475029384752093847520937845209384752093847502983475n;
 
 7. Symbol
 
+================================================================
 
+CONCATENATION IN JAVASCRIPT :-
+
+In javascript, the (+) sign in not only used for arithmetic addition but also for string concatenation. When the (+) operator is used with strings, it concatenates the strings together.
+
+It's important to note that if any operand of the + operator is a string, JS will treat the other operands as strings as well, resultin in string concatenation. If both operands are numbers, the + operator performs numeric additon
 
 */ 
 
-
+let str = "Hello" + "World";
+console.log(str);
+output = HelloWorld // + operator has strings on both of its operands thats why it performed string concatination. (note: there is no specing in HelloWorld because if there is no specinf in string there will be no specing in concatination as well).

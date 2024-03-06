@@ -45,4 +45,26 @@ meaning of declearing a variable - Declaration of a variable in a computer progr
 meaning of assigning a variable - Assigning a value is a process that defines the value of a variable
 meaning of initializing a variable -  Initialization is the process of assigning a value to the Variable.
 
+
+=========================================
+
+TRUTHY AND FALSY VALUE IN JAVASCRIPT :-
+
+In javascript, values are either considered "truthy" or "falsy" when evaluated in a boolean context.
+
+Truthy values are treated as ture when used in conditions. Examples include:
+true
+Any non-empty string ex ("hello")
+any non-zero number ex (45)
+Arrays and objects, even if they're not empty
+
+Falsy values are treated as false in boolean context EXamples include:
+false
+0 (zero)
+"" (an empty string)
+null
+undefined
+NaN (not a number)
+
 */ 
+
