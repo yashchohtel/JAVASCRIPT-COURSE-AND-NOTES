@@ -127,8 +127,22 @@ In javascript, the (+) sign in not only used for arithmetic addition but also fo
 
 It's important to note that if any operand of the + operator is a string, JS will treat the other operands as strings as well, resultin in string concatenation. If both operands are numbers, the + operator performs numeric additon
 
-*/ 
 
+example 1:-
 let str = "Hello" + "World";
 console.log(str);
 output = HelloWorld // + operator has strings on both of its operands thats why it performed string concatination. (note: there is no specing in HelloWorld because if there is no specinf in string there will be no specing in concatination as well).
+
+example 1:-
+
+
+TYPE COERCION :-
+
+Type coercion is the automatic conversion of "values" from one data type to another.
+
+It is a fundamental part of Javascript and can be used to make code morereadable and efficien. 
+There are two types of coercion in javascript: implici and explicit. Implicit coercion happens automatically, while explicit coercion is done manually by the programmer.
+
+Note :- type coercion can lead to unexpected results, so its essential to be aware of how javascript handles these situations.
+
+*/ 
