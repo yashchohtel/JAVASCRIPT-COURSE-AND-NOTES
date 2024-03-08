@@ -261,4 +261,8 @@ let score = 60;
 let result = score>= 60 ? "passed" : "failed";
 console.log(result);
 
+-------------------------------
+
+6. UNIRARY OPERATOR :-  
+
 */
