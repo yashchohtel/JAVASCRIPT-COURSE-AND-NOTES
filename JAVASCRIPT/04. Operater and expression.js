@@ -267,15 +267,4 @@ console.log(result);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 */
