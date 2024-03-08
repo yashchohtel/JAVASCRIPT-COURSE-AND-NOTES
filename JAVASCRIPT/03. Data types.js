@@ -134,13 +134,109 @@ output = HelloWorld // + operator has strings on both of its operands thats why 
 
 ------------------------
 
+https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9XPjUFEOFXanMtEAMbbsYA.png -> Differenc between type coercion and conversion.
+https://dorey.github.io/JavaScript-Equality-Table/unified/ -> example of boolean type coercion.
+
 TYPE COERCION :-
 
-Type coercion is the automatic conversion of "values" from one data type to another.
+Type coercion is the automatic conversion of "values" from one data type to anothe || automatic conversion of value during operations or conparision involving differen data type. It occure automatically by javascrit 
 
 It is a fundamental part of Javascript and can be used to make code morereadable and efficien. 
 There are two types of coercion in javascript: implici and explicit. Implicit coercion happens automatically, while explicit coercion is done manually by the programmer.
 
 Note :- type coercion can lead to unexpected results, so its essential to be aware of how javascript handles these situations.
 
+1. 
+let a = 5+null;
+console.log(typeof(a));
+console.log(a); 
+output = 5; // because null is considered as a zero
+
+2.
+let b = "5"+null;
+console.log(typeof(b));
+console.log(b); 
+output = 5null; // because null is considered as a string
+
+3.
+let c = "5"+2;
+console.log(typeof(c));
+console.log(c); 
+output = 52; // because 2 is considered as a string
+
+4.
+let d = "5"-2;
+console.log(typeof(d));
+console.log(d); 
+output = 3; // because - sign has only one task to substrack same with multiplication and diision
+
+5.
+let e = "5"-"2";
+console.log(typeof(e));
+console.log(e); 
+output = 3; // because - sign has only one task to substrack same with multiplication and diision
+
+6.
+let f = "5"-"yes";
+console.log(typeof(f));
+console.log(f); 
+output = nan; // if we * - /  word string with number string or string with number it gives nan
+
+------------------------
+
+TYPE CONVERSION :-
+
+Explicit conversion of value from one value to another. It deliberatly perform by the developer.
+
+1. String() - it is used to convert values in string
+2. Number() - it is used to convert values in number
+3. Boolean() - it is used to convert values in booleans
+
+example :- 
+
+1. number to string
+let a = 5;
+console.log(a);
+console.log(typeof(a));
+console.log(String(a));
+console.log(typeof(String(a)));
+
+2. Boolean to string
+let a = true;
+console.log(a);
+console.log(typeof(a));
+console.log(String(a));
+console.log(typeof(String(a)));
+
+3. String to number (if there any non numerical string it will convert it in nan)
+let a = "1234";
+console.log(a);
+console.log(typeof(a));
+console.log(Number(a));
+console.log(typeof(Number(a)));
+
+4. Boolean to number (it convert true in 1, and false in zero)
+let a = false;
+console.log(a);
+console.log(typeof(a));
+console.log(Number(a));
+console.log(typeof(Number(a)));
+
+5. String to Boolean (it convert empty string to false and string to true)
+let a = "abcde";
+console.log(a);
+console.log(typeof(a));
+console.log(Boolean(a));
+console.log(typeof(Boolean(a)));
+
+6. Number to Bolean (it convert zero or -0 to false and non zero number neg or pos in true)
+let a =1;
+console.log(a);
+console.log(typeof(a));
+console.log(Boolean(a));
+console.log(typeof(Boolean(a)));
+
 */ 
+
+
+
