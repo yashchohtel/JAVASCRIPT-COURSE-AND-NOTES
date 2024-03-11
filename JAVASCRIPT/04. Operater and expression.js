@@ -101,12 +101,20 @@ let c = a/b;
 console.log(c);
 output = 0;
 
-d) Modulus (%) : Returns the remainder when the left operand is divided by the right operand.
+e) Modulus (%) : Returns the remainder when the left operand is divided by the right operand.
 
 Var c = 17;
 var d = 5;
 var remainder = c%d;
 output = 2
+
+f) exponentiation Operator (**) : it returns the result of raising the first operand to the power of the second operand. 
+
+let x = 10;
+let y = 3;
+console.log(x**3);
+console.log(x**y);
+
 
 -------------------------------
 
@@ -265,6 +273,95 @@ console.log(result);
 
 6. UNIRARY OPERATOR :-  
 
+A unary operator is an operator which work with only one operand this this operator comes either before or after the operand.
+
+1) UNARY PLUS (+) OPERATOR :- 
+
+The Unary Plys (+)converts an operand into a number if possible. If the operand is a string that represents a valid number, it will be converted to a number. Otherwise, it will evaluate to NaN (Not-a-Nmber).
+
+example 1 :-
+
+var x = "10";
+console.log(x);
+console.log(typeof(x));
+
+var y = +x;
+console.log(y);
+console.log( typeof y);
+
+example 2 :-
+let a = "yash";
+console.log(a);
+console.log(typeof a);
+
+let b = +a;
+console.log(b);
+console.log(typeof b);
+
+example 3 :-
+let a = "";
+console.log(a);
+console.log(typeof a);
+
+let b = +a;
+console.log(b);
+console.log(typeof b);
+
+---------------
+
+2) UNARY MINUS (-) OPERATOR :- 
+
+The Unary Negative (-) Operator is used to convert its operand to a negative number if it isn't already a negative number.
+
+example 1 :-
+
+let a = 10;
+console.log(a);
+console.log(typeof a);
+
+let b = -a;
+console.log(b);
+console.log(typeof b);
+
+example 2 :-
+
+let a = "10";
+console.log(a);
+console.log(typeof a);
+
+let b = -a;
+console.log(b);
+console.log(typeof b);
+
+example 3:-
+
+let a = "yash";
+console.log(a);
+console.log(typeof a);
+
+let b = -a;
+console.log(b);
+console.log(typeof b);
+
+---------------
+
+2) INCRIMENT AND DECRIMENT OPERATOR :- 
+
+In Javascript, the increment and decrement operators are used to increase or decrease the value of variable by 1. They are represented by the symbols "++" and "--". these operators can be applied to both numeric and string variables.
+
+1. Increment Operator (++); the increment operator increases the value of the oparand by adding 1 to current value of the operaned.
+
+example: 
+
+let num = 15;
+num++
+console.log(num);
+output: 16;
+
+in thsi exampe, the variable num is assigned the value of 15, when we use the increment operator ++, it adds 1 to the current value of num resulting in 16.
+
+
+2. Decrement Operator (--) 
 
 
 */
