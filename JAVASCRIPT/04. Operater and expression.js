@@ -108,14 +108,6 @@ var d = 5;
 var remainder = c%d;
 output = 2
 
-f) exponentiation Operator (**) : it returns the result of raising the first operand to the power of the second operand. 
-
-let x = 10;
-let y = 3;
-console.log(x**3);
-console.log(x**y);
-
-
 -------------------------------
 
 3. COMPARISON OPERATORS :-
@@ -361,7 +353,50 @@ output: 16;
 in thsi exampe, the variable num is assigned the value of 15, when we use the increment operator ++, it adds 1 to the current value of num resulting in 16.
 
 
-2. Decrement Operator (--) 
+2. Decrement Operator (--) : The decrement operator decreases the value of the operand by substracting 1 from the current value of the operand. 
+
+
+example:
+
+let count = 10;
+count--;
+console.log(count)
+
+3. Prefix Increment and Decrement Operator (++x, --x) : When we place the == or -- before the operands, it is called prefix form. in the prefix form the ++ or -- is executed first then the updated value is used in the expression.
+
+example:
+
+let x = 10;
+let y = ++x;
+console.log(x); // output:11;
+console.log(y); // output:11;
+
+let a = 10;
+let b = --a;
+console.log(a); // output:9;
+console.log(b); // output:9;
+
+In the prefix form, ++x the value of x is incremented first, and then the updated value is assigned to y.
+
+
+4. Postfix Increment and Decrement Operator (x++, x--) : When we place the ++ or -- operators after the operands, it is called the postfix form. In the postfix form the ++ or -- is executed after the execution of othe operators in the expression.
+
+example:
+let a = 7;
+let b = a--;
+console.log(a); // output: 6
+console.log(b); // output: 7
+
+---------------
+
+3) exponentiation Operator (**) : it returns the result of raising the first operand to the power of the second operand. 
+
+let x = 10;
+let y = 3;
+console.log(x**3);
+console.log(x**y);
 
 
 */
+
+
