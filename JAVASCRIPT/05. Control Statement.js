@@ -65,13 +65,13 @@ if (temperature > 30) {
 
 QUESTIONS FOR IF ELSE :-
 
+QUESTION 1:-
+
 -> If the person is 18 years or older, a citizen and registered to vote displa a message saying they are eigible to vot.
 -> If the person is youngr than 18 not a citizen, or not registered to vote display a message saying they are not eligible to vote.
 -> If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
 -> If the person is 18 or older, a citizen, but not registered to vote, display message saying they are not eligible due to resistration status.
 -> extended voting eliiblety checker with addition cndiions.
-
-*/
 
 let voterAge = 19;
 let isCitizenOfIndia = true;
@@ -94,3 +94,45 @@ if(voterAge >= 18 && isCitizenOfIndia == true && hasVoterIdCard == true){
 } else {
     console.log("you cant vote you are not 18+");
 }  
+
+QUESTION 2:-
+
+-> Write a program to chekc if the number is odd or even
+-> is a number can is completey divisible by 2 is even
+-> is a number can't completely divisible by 2 is odd
+
+let num = 11;
+
+if(num%2 === 0){
+    console.log("Yes " + num + " is even number");
+} else{
+    console.log("No " + num + " is odd number");
+}
+
+QUESTION 3:-
+
+Write a programm to check is a number is posibite negative or zero.
+
+QUESTION 4:-
+
+-> Write a program t check is a number is prime.
+-> todo prime numbers are numbers that have only 2 factors: 1 and themselves.
+-> All prime numbers greater than 2 are odd.
+-> However hot all odd umbers are prime
+
+let num = 0;
+
+if(num > 1){
+    console.log(`your number ${num} is positive`);
+} else if(num === 0){
+    console.log(`your number ${num} is zero`);
+} else{
+    console.log(`your number ${num} is Negative`);
+}
+
+-----------------------
+
+NESTED IF ELSE :- 
+
+*/
+
