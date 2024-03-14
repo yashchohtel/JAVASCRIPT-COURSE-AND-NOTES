@@ -134,5 +134,7 @@ if(num > 1){
 
 NESTED IF ELSE :- 
 
+JavaScript allows us to nest if statements within if statements. i.e, we can place an if statement inside another if statement. A nested if is an if statement that is the target of another if or else.
+
 */
 
