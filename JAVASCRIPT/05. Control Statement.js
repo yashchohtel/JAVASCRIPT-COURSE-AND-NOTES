@@ -136,44 +136,8 @@ NESTED IF ELSE :-
 
 JavaScript allows us to nest if statements within if statements. i.e, we can place an if statement inside another if statement. A nested if is an if statement that is the target of another if or else.
 
+A nested if-else statement in JavaScript is a series of conditional statements that are nested within each other. It allows for more complex decision-making in code by providing multiple levels of conditions to be evaluated.
+
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
