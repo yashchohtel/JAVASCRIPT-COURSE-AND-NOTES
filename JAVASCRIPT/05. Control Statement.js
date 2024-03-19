@@ -186,15 +186,5 @@ In JavaScript, a switch statement is a control flow statement that allows you to
 
 
 
-
-
-
-
-
-
-
-
-
-
 */
 
