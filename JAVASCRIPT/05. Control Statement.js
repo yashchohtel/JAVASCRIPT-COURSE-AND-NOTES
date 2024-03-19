@@ -184,5 +184,17 @@ if(num > 1){
 SWITCH STATEMENT :- 
 In JavaScript, a switch statement is a control flow statement that allows you to execute different blocks of code based on the value of an expression. It provides a more concise alternative to multiple if...else statements when you have multiple conditions to evaluate against the same variable.
 
+
+
+
+
+
+
+
+
+
+
+
+
 */
 
