@@ -182,22 +182,80 @@ if(num > 1){
 -----------------------
 
 SWITCH STATEMENT :- 
+
 In JavaScript, a switch statement is a control flow statement that allows you to execute different blocks of code based on the value of an expression. It provides a more concise alternative to multiple if...else statements when you have multiple conditions to evaluate against the same variable.
 
+example 1:-
 
+let day = "friday";
 
+switch(day){
 
+    case "monday" : 
+    console.log("today is monday");
+    break;
 
+    case "tuesday" : 
+    console.log("today is tuesday");
+    break;
 
+    case "wednesday" : 
+    console.log("today is wednesday");
+    break;
 
+    case "thrusday" : 
+    console.log("today is thrusday");
+    break;
 
+    case "friday" : 
+    console.log("today is friday");
+    break;
 
+    case "saturday" : 
+    console.log("today is saturday");
+    break;
 
+    default:
+    console.log("today is sunday");
 
+}
 
-
+example 2 :-
 
 
 
 */
+
+let areaOfShapes = "triangle";
+let result;
+let l = 5;
+let b = 10;
+let r = 5
+let h = 10
+
+switch (areaOfShapes) {
+    case "square":
+        result = l**2;
+        console.log(`side of ${areaOfShapes} is ${l} and area of square is side x side so area is ${result}`);
+        break;
+
+    case "rectangle":
+        result = l*b;
+        console.log(`length and breadth of ${areaOfShapes} is ${l} and ${b} and area of ${areaOfShapes} is l*b so area is ${result}`);
+        break;
+
+    case "circle":
+        result = Math.PI*r**2;
+        console.log(`radius of ${areaOfShapes} is ${r} and area of circle is πr2 so area is ${result}`)
+        break;
+
+    case "triangle":
+        result = 1/2*h*b;
+        console.log(`height and base of ${areaOfShapes} is ${h} and ${b} and area of ${areaOfShapes} is  A = 1/2 x b x h so area is ${result}`);
+        break;
+
+    default:
+        console.log("wrong input only to get area of circle, triangle, square, rectangle");
+}
+
 
