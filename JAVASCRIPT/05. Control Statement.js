@@ -63,6 +63,55 @@ if (temperature > 30) {
 
 -------------
 
+NESTED IF ELSE :- 
+
+JavaScript allows us to nest if statements within if statements. i.e, we can place an if statement inside another if statement. A nested if is an if statement that is the target of another if or else.
+
+A nested if-else statement in JavaScript is a series of conditional statements that are nested within each other. It allows for more complex decision-making in code by providing multiple levels of conditions to be evaluated.
+
+example  :- 
+let temperature = 10; 
+let isRaining = false;
+
+if (temperature > 25) {
+    if (isRaining) {
+        console.log(
+            "It's hot and raining. You might need an umbrella and sunscreen."
+            );
+        } else {
+            console.log("It's hot and dry. Don't forget to stay hydrated!");
+        }
+    } else {
+        if (isRaining) {
+            console.log(
+                "It's cold and raining. Don't forget your umbrella and jacket."
+                );
+            } else {
+                console.log("It's cold and dry. You might want to wear layers.");
+            }
+}
+
+
+example 2 :-
+
+let num = 0;
+
+if(num > 0){
+    if(num % 2 == 0){
+        console.log(`${num} is positive and even number`);
+    } else{
+        console.log(`${num} is positive and odd number`);
+    }
+} else{
+    if(num < 0){
+        console.log(`${num} is negative number`);
+    } else{
+        console.log(`${num} is zero`);
+    }
+}
+
+-------------
+
 QUESTIONS FOR IF ELSE :-
 
 QUESTION 1:-
@@ -132,16 +181,8 @@ if(num > 1){
 
 -----------------------
 
-NESTED IF ELSE :- 
-
-JavaScript allows us to nest if statements within if statements. i.e, we can place an if statement inside another if statement. A nested if is an if statement that is the target of another if or else.
-
-A nested if-else statement in JavaScript is a series of conditional statements that are nested within each other. It allows for more complex decision-making in code by providing multiple levels of conditions to be evaluated.
+SWITCH STATEMENT :- 
+In JavaScript, a switch statement is a control flow statement that allows you to execute different blocks of code based on the value of an expression. It provides a more concise alternative to multiple if...else statements when you have multiple conditions to evaluate against the same variable.
 
 */
-
-                                                                                                                                                  
-
-
-
 
