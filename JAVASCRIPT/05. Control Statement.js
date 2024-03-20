@@ -185,6 +185,8 @@ SWITCH STATEMENT :-
 
 In JavaScript, a switch statement is a control flow statement that allows you to execute different blocks of code based on the value of an expression. It provides a more concise alternative to multiple if...else statements when you have multiple conditions to evaluate against the same variable.
 
+Why There there is a break statement after each case in the switch statement => The break statement is used to exit the switch statement after the corresponding case is executed, preventing fall-through to subsequent cases.
+
 example 1:-
 
 let day = "friday";
@@ -221,11 +223,6 @@ switch(day){
 }
 
 example 2 :-
-
-
-
-*/
-
 let areaOfShapes = "triangle";
 let result;
 let l = 5;
@@ -257,5 +254,8 @@ switch (areaOfShapes) {
     default:
         console.log("wrong input only to get area of circle, triangle, square, rectangle");
 }
+
+*/
+
 
 
