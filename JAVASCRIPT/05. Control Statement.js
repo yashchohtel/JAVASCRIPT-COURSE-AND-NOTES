@@ -273,13 +273,3 @@ console.log(message); // Output: "You are an adult"
 */
 
 
-
-
-
-
-
-
-
-
-
-
