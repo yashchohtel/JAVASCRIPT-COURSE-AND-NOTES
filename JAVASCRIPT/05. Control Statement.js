@@ -255,6 +255,21 @@ switch (areaOfShapes) {
         console.log("wrong input only to get area of circle, triangle, square, rectangle");
 }
 
+
+-----------------------
+
+TERNARY OPERATOR :-
+
+The ternary operator in JavaScript is a concise way of writing conditional statements. It's also known as the conditional operator. It takes three operands: a condition followed by a question mark (?), a statement to execute if the condition is true, followed by a colon (:), and a statement to execute if the condition is false
+
+syntax of ternary operator:-
+
+condition ? expressionIfTrue : expressionIfFalse;
+
+var age = 20;
+var message = (age >= 18) ? "You are an adult" : "You are a minor";
+console.log(message); // Output: "You are an adult"
+
 */
 
 
