@@ -3,15 +3,4 @@
 FUNCTION IN JSVASCRIPT :-
 
 
-
-
-
-
-
-
-
-
-
-
-
 */ 
