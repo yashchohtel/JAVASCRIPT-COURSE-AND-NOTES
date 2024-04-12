@@ -1,0 +1,7 @@
+/*
+
+FUNCTION IN JSVASCRIPT :-
+
+
+
+*/ 
