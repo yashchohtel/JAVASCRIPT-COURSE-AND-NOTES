@@ -50,25 +50,3 @@ sayFullName("yash","chohtel");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
