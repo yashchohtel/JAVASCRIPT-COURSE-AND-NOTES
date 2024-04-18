@@ -14,7 +14,39 @@ function functionName(parameters){
 
 functionName(); // this is calling the function
 
----------
+======================================
+
+1. FUNCTION DECLERATION :- 
+
+Declare a function suing the function keyword, followed by the function name, paramaters (if any), and the function body. This step defines the function and specifies what code should be execute when the function is called.
+
+
+2. FUNCTION INVOCATION (calling a function) :- After declearing a function, you can invoke or call it by using name followed by parethenses. [ functionName() ]. If the function has parameters, provide values (arguments) for those parameters inside parenteses.
+
+
+3. FUNCTION PARAMETER :- A function parameter is a variable that is listed as a part of a function declaration. It acts as a placeholder for a value what be provided when the function is called. Parameters allow to pass information into a function, making it more versatile and reusable.
+
+
+4. FUNCTION ARGUMENT :- A function argument is a value that you provide when you call a function arguments are passed into a function to fill the parameters define in the function decleration.
+
+
+function greet(greetingWord){
+    console.lgo( greetingWord + " everyone" )
+}
+
+greet("goodmorning")
+
+here :-
+
+function - function keyword to decleare a function
+greet - is a name of function by which this function will be called.
+(greetingWord) - is a parameter which will revice value from argument while calling the function.
+{ console.lgo("hello world!") } - is function body a block of code which will be executed. 
+greet("goodmorning") - is called calling or invocation the function.
+("goodmorning") - is argument or value for the parameter inside the function name.
+
+TIPS :- "1st declare the function and then call it" In javascript, it's a good practie to declare your function before you call them. this ensures that the function is available for use  when ou try to call it.
+
 
 example 1:- (say hello world with the helop of fucntion)
 
@@ -55,37 +87,21 @@ function addNumbers(num1,num2){
 addNumbers(1,2)
 addNumbers(234,2123)
 
+======================================
+
+5. FUNCTION EXPRESSION :- A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it become a name function expression. and we can call the function by its name which is a variavle.
+
+let result = function(num1,num2){
+    console.log(num1+num2);
+}
+
+result(1,1);
 
 ======================================
 
-1. FUNCTION DECLERATION :- 
+6 ANONYMOUS FUNCTIONS :- An anonymous fnction is a function without a name. It came be vreated using without a name. It can be created using either a function expression or a funciton decleration without a speficied name.
 
-Declare a function suing the function keyword, followed by the function name, paramaters (if any), and the function body. This step defines the function and specifies what code should be execute when the function is called.
-
-2. FUNCTION INVOCATION (calling a function) :-
-
-After declearing a function, you can invoke or call it by using name followed by parethenses. [ functionName() ]. If the function has parameters, provide values (arguments) for those parameters inside parenteses.
-
-
-function greet(greetingWord){
-    console.lgo( greetingWord + " everyone" )
-}
-
-greet("goodmorning")
-
-here :-
-
-function - function keyword to decleare a function
-greet - is a name of function by which this function will be called.
-(greetingWord) - is a parameter which will revice value from argument while calling the function.
-{ console.lgo("hello world!") } - is function body a block of code which will be executed. 
-greet("goodmorning") - is called calling or invocation the function.
-("goodmorning") - is argument or value for the parameter inside the function name.
-
-TIPS :- "1st declare the function and then call it" In javascript, it's a good practie to declare your function before you call them. this ensures that the function is available for use  when ou try to call it.
 
 */ 
-
-
 
 
