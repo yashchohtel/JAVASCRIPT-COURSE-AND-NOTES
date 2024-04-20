@@ -99,20 +99,44 @@ result(1,1);
 
 ======================================
 
-6 ANONYMOUS FUNCTIONS :- An anonymous fnction is a function without a name. It came be vreated using without a name. It can be created using either a function expression or a funciton decleration without a speficied name.
+6 ANONYMOUS FUNCTIONS :- An anonymous fnction is a function without a name. It came be creted withous using a name. It can be created using either a function expression or a funciton decleration without a speficied name.
+we can assign a a anonymous function in a variable and can make it a function expression.
+
+anonymous function :-
+function(a,b){
+    console.log(a+b);
+}
 
 
-*/ 
+anonymous function with function expression :-
+let result = function(num1,num2){
+    console.log(num1+num2);
+}
+
+======================================
+
+7. RETURN KEYWORD :- In javascript, the return statement is used within a function to specify the value that the function should produce or provid back to the code that called it. The return statement stops the execution of a function and sends a value back to the caller. We can store a returned value to a variable.
+
+example 1:-
+
+function addNumbers(num1, num2) {
+    return `sum of ${num1} and ${num2} is ${num1 + num2}`;
+}
+
+let result1 = addNumbers(1, 2);
+let result2 = addNumbers(234, 2123);
+
+
+console.log(addNumbers(1, 2));
+console.log(result1);
+console.log(addNumbers(234, 2123));
+console.log(result2);
+
+======================================
+
+8. IMIDATILY INVOKE FUNCTION (IIFE)
 
 
 
-
-
-
-
-
-
-
-
-
+*/
 
