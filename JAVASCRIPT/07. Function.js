@@ -145,15 +145,3 @@ console.log(result2);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
