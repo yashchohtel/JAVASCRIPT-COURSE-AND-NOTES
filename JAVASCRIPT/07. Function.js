@@ -143,12 +143,3 @@ console.log(result2);
 
 
 
-
-
-
-
-
-
-
-
-
