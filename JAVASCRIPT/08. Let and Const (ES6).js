@@ -9,23 +9,6 @@ LET AND CONST :-
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */ 
 
 let myName = "yash chohtel";
