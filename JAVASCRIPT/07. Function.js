@@ -134,14 +134,23 @@ console.log(result2);
 
 ======================================
 
-8. IMIDATILY INVOKE FUNCTION (IIFE)
+8. IMIDATILY INVOKE FUNCTION (IIFE) -> IIFE or Immediately INoked function expression, is a javascript function that is defined and executed immediately after its creation. it is a way to create a self-contained block of code that doesn't interfere with the surrounding code and executes immeditely
 
+SYNTAX :-
+
+(function(){
+    code to be executed
+}())
+
+
+example 1:-
+
+var sum = (function (num1, num2) {
+  return num1 + num2;
+})(5, 5);
+
+console.log(`sum of two numbers is ${sum}`);
 
 
 */
-
-
-
-
-
 
