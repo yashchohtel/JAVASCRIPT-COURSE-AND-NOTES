@@ -37,12 +37,3 @@ console.log(myName);``
 
 
 
-
-
-
-
-
-
-
-
-
