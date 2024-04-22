@@ -34,3 +34,15 @@ console.log(myName);
  
 myName = "yash"
 console.log(myName);``
+
+
+
+
+
+
+
+
+
+
+
+
