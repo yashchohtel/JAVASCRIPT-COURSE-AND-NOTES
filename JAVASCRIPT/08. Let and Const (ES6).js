@@ -40,12 +40,3 @@ console.log(myName);``
 
 
 
-
-
-
-
-
-
-
-
-
