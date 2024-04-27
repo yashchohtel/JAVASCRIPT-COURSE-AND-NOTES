@@ -74,3 +74,18 @@ let isReversed = (str) =>{
 }
 
 isReversed("YASH CHOHTEL")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
