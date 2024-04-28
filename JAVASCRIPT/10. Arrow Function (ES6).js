@@ -69,16 +69,23 @@ example 2 :- Write a function to reverse a given string without using built-in r
 */
 
 
-let isReversed = (str) =>{
+// let isReversed = (str) =>{
 
-}
+// }
 
-isReversed("YASH CHOHTEL")
-
-
+// isReversed("YASH CHOHTEL")
 
 
 
+// Hello everyone why I am getting an error in this code
+let a = 20
+a === 21 ? console.log("true") : console("false");
+
+
+
+// but when I code this then this works fine 
+let A = true
+A ? console.log("true") : console("false");
 
 
 
