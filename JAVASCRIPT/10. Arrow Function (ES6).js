@@ -66,68 +66,37 @@ calculation(4,2,"*")
 
 example 2 :- Write a function to reverse a given string without using built-in reverse methods.
 
+const isReverse = (str) => {
 
+  let reversed = "";
 
+  for(let char = str.length; char >= 0; char-- ){
+      console.log(str[char]);
+      reversed = reversed + str[char]
+  }
 
+  console.log(`reversed name of ${str} is ${reversed}`);
 
+};
 
+example 3 :-  create a function to determine if a given string is a palindrone.
 
+let isPalindrome = (str) => {
 
+  let reversedStr = "";
 
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr = reversedStr + str[i];
+  }
+
+  if (reversedStr === str) {
+    console.log(`yes your word ${str} is a palandrome word`);
+  } else{
+    console.log(`no your word ${str} is not a palandrome word`);
+  }
+
+};
+
+isPalindrome("malayalam");
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
