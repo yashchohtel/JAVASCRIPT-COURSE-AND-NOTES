@@ -209,14 +209,3 @@ console.log(fruits);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
