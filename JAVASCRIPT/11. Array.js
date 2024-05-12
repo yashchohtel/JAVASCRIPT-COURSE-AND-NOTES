@@ -207,3 +207,16 @@ let newLength = fruits.shift()
 console.log(newLength);
 console.log(fruits);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
