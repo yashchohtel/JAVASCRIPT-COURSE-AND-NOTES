@@ -358,5 +358,14 @@ console.log(newArr);
 let number = [1, 2, 3, 6, 5, 6, 7, 8, 9, 6];
 
 let uniqueValue = number.filter((curElem,index,arr)=>{
-    
+
 })
+
+
+
+
+
+
+
+
+
