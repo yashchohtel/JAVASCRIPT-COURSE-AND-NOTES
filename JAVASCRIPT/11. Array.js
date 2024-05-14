@@ -1,4 +1,6 @@
-/*
+/* 
+*/
+
 
 ARRAY :- 
 
@@ -134,6 +136,48 @@ let multiplyedArray = numbers.map((curElem) => {
 })
 
 console.log(multiplyedArray);
+
+QUESTIONS
+
+1. Using map to suqare each number and create a new array
+
+let numbers = [2,3,4,5,6]
+let newArr = numbers.map((curElem)=>{
+  return curElem * curElem
+})
+console.log(newArr);
+
+2. Uing the map method, write a function that take an array of strings and returns a new array where each string is capitalized.
+
+let strings = ["apple", "boy", "cat", "dot", "elephant", "fish"];
+let newArr = strings.map((curElm, index, array) => {
+  return curElm.toUpperCase();
+});
+
+console.log(newArr);
+
+3. Using the map method, write a function that takes an array of numbers and returns a new array where each numbers is squared, but only if it's an even number.
+
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+
+let newArr = numbers.map((curElem)=>{
+    if(curElem % 2 == 0){
+      return curElem * curElem;
+    }
+}).filter((curElem)=>{
+    return curElem != undefined;
+})
+
+console.log(newArr);
+
+4. Using the map method. write a function that takes an array of name and returns a new array where each name is prefixed with "MR".
+
+let strings = ["apple", "boy", "cat", "dot", "elephant", "fish"];
+let newArr  = strings.map((curElem)=>{
+  return `Mr ${curElem}`
+})
+
+console.log(newArr);
 
 ---------------
 
@@ -351,23 +395,29 @@ console.log(newArr);
 
 3. find unique value
 
+let number = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
 
+let uniqueValue = number.filter((curElem, index, arr) => {
+  return arr.indexOf(curElem) === index;
+});
 
-*/
+console.log(uniqueValue);
 
-let number = [1, 2, 3, 6, 5, 6, 7, 8, 9, 6];
+---------------
 
-let uniqueValue = number.filter((curElem,index,arr)=>{
+TO SORT AND COMPARE AN ARRAY
 
-})
+11. sort() : the sort method sorts the elements of an array in place and returns sorted array. By default, it sorts elements as strings.
 
+let fruits = ["apple", "oranges", "mangoes", "bananas", "grapes", "gwava"];
+fruits.sort();
+console.log(fruits);
 
+---------------
 
+VERY IMPORTANT ARRAY METHODS REDUCE
 
+12. Reduce() : The reduce method in javascript is used to accumulate or reduce an array to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. the reduce method taks a callback function as its first argument and an potional initial value for the accumulator as the second argument.
 
-
-
-
-
-
+syntax : array.reduce(function callback(accumulator,currentValue,index,array)=>{}, initialValue)
 
