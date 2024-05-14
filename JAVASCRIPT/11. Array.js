@@ -421,3 +421,11 @@ syntax : array.reduce(function callback(accumulator,currentValue,index,array)=>{
 
 
 */
+
+
+
+
+
+
+
+
