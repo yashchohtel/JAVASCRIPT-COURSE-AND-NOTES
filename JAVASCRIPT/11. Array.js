@@ -1,6 +1,4 @@
-/* 
-*/
-
+/*
 
 ARRAY :- 
 
@@ -421,3 +419,5 @@ VERY IMPORTANT ARRAY METHODS REDUCE
 
 syntax : array.reduce(function callback(accumulator,currentValue,index,array)=>{}, initialValue)
 
+
+*/
