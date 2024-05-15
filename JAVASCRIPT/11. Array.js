@@ -436,3 +436,12 @@ const totalPrice = productPrice.reduce((accum,curElem)=>{
 console.log(totalPrice);
 
 */
+
+
+
+
+
+
+
+
+
