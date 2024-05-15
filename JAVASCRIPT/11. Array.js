@@ -439,9 +439,3 @@ console.log(totalPrice);
 
 
 
-
-
-
-
-
-
