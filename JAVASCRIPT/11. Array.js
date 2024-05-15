@@ -419,13 +419,20 @@ VERY IMPORTANT ARRAY METHODS REDUCE
 
 syntax : array.reduce(function callback(accumulator,currentValue,index,array)=>{}, initialValue)
 
+accumulator : The accumulated result of the previous iterations.
+currentValue : the current element being processed in the array.
+index (optional) : the index of the current element being processed.
+array (optianal) : the array reduce was called upon.
+initialValue (potional) : an initial value for the accumulator. if not provide the first element of the array is used as the initial accumulator value.                            
+
+Write a js function that calculates the total price of items in a shopping createImageBitmap. The function should take an array of item prices as input and return the total price.
+
+const productPrice = [100,200,300,400,500,600]
+
+const totalPrice = productPrice.reduce((accum,curElem)=>{
+  return accum + curElem
+},0)
+
+console.log(totalPrice);
 
 */
-
-
-
-
-
-
-
-
