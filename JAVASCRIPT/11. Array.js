@@ -24,6 +24,40 @@ let fruits =  ['apple', 'oranges', 'mangoes', 'bananas' ];
 console.log(fruits); 
 output : [ 'apple', 'oranges', 'mangoes', 'bananas' ]
 
+3. Multidimensional array
+
+In JavaScript, a multidimensional array is an array that contains other arrays as its elements. These arrays can themselves contain arrays, forming a structure with multiple dimensions.
+
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix); 
+
+example 1 :- 
+
+var arr = [
+  ["harry", 18, "male"],
+  ["sunny", 18, "male"],
+  ["munny", 18, "female"],
+  ["tom", 18, "female"],
+];
+
+document.write("<table border='1px' cellspacing='1'>");
+
+for (let a = 0; a < arr.length; a++) {
+  document.write("<tr>");
+
+  for (b = 0; b < arr[0].length; b++) {
+    document.write("<td>" + arr[a][b] + "</td>");
+  }
+
+  document.write("</tr>");
+}
+document.write("</table>");
+
 ----------------------------
 
 ACCESSING ELEMENTS :-
@@ -221,7 +255,7 @@ console.log(newLength);
 console.log(fruits);
 
 
-3. unshift() : Mthod that adds one or more elements to the beginning of an aray. and return new length of an array.
+3. un'shi'ft() : Mthod that adds one or more elements to the beginning of an aray. and return new length of an array.
 
 let fruits = ["apple", "oranges", "mangoes", "bananas", "grapes", "gwava"];
 console.log(fruits);
@@ -241,7 +275,7 @@ console.log(fruits);
 QUESTIONS :-
 
 1. Add Dec at the end of an array.
-let months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov"];
+let months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aIug", "sep", "oct", "nov"];
 console.log(months);
 newArr = months.push("dec");
 console.log(newArr);
@@ -279,6 +313,25 @@ console.log(fruits);
 
 here 1 is the starting point which is index number of elemet shows we are start from the 1 index number element and 2 is the num of element we want delet it means it will delete the 2 element from the 1 index number and return the removed element from an array. and "amm", "santra", "kela" is the inserted element to the array. if we give the 0 value insted of 2 it will not delete an element but it will insert the new element there. and return empty element.
 
+slice () : The slice() method in JavaScript is used to extract a section of an array and return it as a new array. It does not modify the original array but instead returns a shallow copy of a portion of the array selected from start to end (end not included).
+
+const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+
+const slicedFruits = fruits.slice(1, 3);
+console.log(slicedFruits); // Output: ['banana', 'cherry']
+
+In this example, slice(1, 3) extracts elements from index 1 to 3 (not including 3).
+
+Ommitin parameter values :-
+
+const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+
+const sliceFromStart = fruits.slice(2);
+console.log(sliceFromStart); // Output: ['cherry', 'date', 'elderberry']
+
+const sliceToEnd = fruits.slice(0, 3);
+console.log(sliceToEnd); // Output: ['apple', 'banana', 'cherry']
+
 ---------------
 
 SEARCHING IN AN ARRAY :-
@@ -292,6 +345,7 @@ console.log(fruits);
 
 let newArr = fruits.indexOf("apple",1); // here "apple" is the element we want to search and 1 is the given index number from where we want to start searching if the element found it will return the elements index number or if not found it will return -1.
 console.log(newArr);
+
 
 
 7. lastIndexOf() : the lastInddexOf() method of array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromindex.
@@ -411,11 +465,21 @@ let fruits = ["apple", "oranges", "mangoes", "bananas", "grapes", "gwava"];
 fruits.sort();
 console.log(fruits);
 
+12. reverse() : The reverse() method reverses the order of the elements in the array so that the first element becomes the last, the second element becomes the second-to-last, and so on. This method changes the original array and returns it.
+
+const numbers = [1, 2, 3, 4, 5];
+console.log('Original array:', numbers); // Output: [1, 2, 3, 4, 5]
+
+const reversedNumbers = numbers.reverse();
+console.log('Reversed array:', reversedNumbers); // Output: [5, 4, 3, 2, 1]
+
+console.log('Original array after reverse:', numbers); // Output: [5, 4, 3, 2, 1]
+
 ---------------
 
 VERY IMPORTANT ARRAY METHODS REDUCE
 
-12. Reduce() : The reduce method in javascript is used to accumulate or reduce an array to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. the reduce method taks a callback function as its first argument and an potional initial value for the accumulator as the second argument.
+13. Reduce() : The reduce method in javascript is used to accumulate or reduce an array to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. the reduce method taks a callback function as its first argument and an potional initial value for the accumulator as the second argument.
 
 syntax : array.reduce(function callback(accumulator,currentValue,index,array)=>{}, initialValue)
 
@@ -435,15 +499,160 @@ const totalPrice = productPrice.reduce((accum,curElem)=>{
 
 console.log(totalPrice);
 
+---------------
+
+14. concat() : The concat() method in JavaScript is used to merge two or more arrays. This method does not change the existing arrays but instead returns a new array that combines the elements from the provided arrays.
+
+example 1:-
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+const combinedArray = array1.concat(array2);
+console.log(combinedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+example 2 :-
+
+const array1 = ['a', 'b'];
+const array2 = ['c', 'd'];
+const array3 = ['e', 'f'];
+
+const combinedArray = array1.concat(array2, array3);
+console.log(combinedArray); // Output: ['a', 'b', 'c', 'd', 'e', 'f']
+
+
+15. Join() : The join() method in JavaScript is used to join all elements of an array into a single string. The elements are separated by a specified separator string. If no separator is provided, the default separator is a comma (,).
+
+example 1:-
+
+const elements = ['Fire', 'Air', 'Water'];
+
+const result = elements.join();
+console.log(result); // Output: 'Fire,Air,Water'
+
+
+example 2 :-
+
+const elements = ['Fire', 'Air', 'Water'];
+
+const result = elements.join(' - ');
+console.log(result); // Output: 'Fire - Air - Water'
+
+
+16. isAray() : The Array.isArray() method in JavaScript is used to determine whether a given value is an array. It returns true if the value is an array, and false otherwise.
+
+console.log(Array.isArray([1, 2, 3]));  // Output: true
+console.log(Array.isArray(['a', 'b', 'c']));  // Output: true
+console.log(Array.isArray(new Array(5)));  // Output: true
+console.log(Array.isArray(123));  // Output: false
+console.log(Array.isArray('Hello'));  // Output: false
+console.log(Array.isArray({ key: 'value' }));  // Output: false
+console.log(Array.isArray(null));  // Output: false
+console.log(Array.isArray(undefined));  // Output: false
+console.log(Array.isArray(() => {}));  // Output: false
+console.log(Array.isArray([[1, 2], [3, 4]]));  // Output: true
+
+
+17. find() : The find() method in JavaScript is used to return the first element in an array that satisfies a provided testing function. If no elements satisfy the testing function, find() returns undefined.
+
+syntax : array.find(callback(element, index, array), thisArg)
+
+Parameters
+callback: A function to execute on each value in the array until it finds one where the function returns true. It takes three arguments:
+element: The current element being processed in the array.
+index (optional): The index of the current element being processed.
+array (optional): The array find was called upon.
+thisArg (optional): An object to use as this inside the callback.
+
+
+example 1:-
+const numbers = [5, 12, 8, 130, 44];
+const found = numbers.find(number => number > 10);
+console.log(found); // Output: 12
+
+example 2:-
+const users = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' },
+  { id: 3, name: 'Charlie' }
+];
+
+const user = users.find(user => user.name === 'Bob');
+console.log(user); // Output: { id: 2, name: 'Bob' }
+
+18. findIndex() : The findIndex() method in JavaScript is used to return the index of the first element in an array that satisfies a provided testing function. If no elements satisfy the testing function, it returns -1.
+
+syntax : array.findIndex(callback(element, index, array), thisArg)
+
+callback: A function to execute on each value in the array until it finds one where the function returns true. It takes three arguments:
+element: The current element being processed in the array.
+index (optional): The index of the current element being processed.
+array (optional): The array findIndex was called upon.
+thisArg (optional): An object to use as this when executing the callback.
+
+example 1:-
+const numbers = [5, 12, 8, 130, 44];
+const index = numbers.findIndex(number => number > 10);
+console.log(index); // Output: 1
+
+
+example 2:-
+const users = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' },
+  { id: 3, name: 'Charlie' }
+];
+
+const index = users.findIndex(user => user.name === 'Bob');
+console.log(index); // Output: 1
+
+19. toString() : The toString() method in JavaScript is used to convert an array (or other types of objects) into a string. For arrays, this method returns a string representing the elements of the array, separated by commas. It is a built-in method available for all JavaScript objects and can be overridden by user-defined objects to customize the string representation.
+
+example 1:-
+const numbers = [1, 2, 3, 4, 5];
+const stringRepresentation = numbers.toString();
+console.log(stringRepresentation); // Output: '1,2,3,4,5'
+
+example 2:-
+const fruits = ['apple', 'banana', 'cherry'];
+const fruitString = fruits.toString();
+console.log(fruitString); // Output: 'apple,banana,cherry'
+
+example 3 :- 
+const nestedArray = [1, 2, [3, 4], 5];
+const nestedArrayString = nestedArray.toString();
+console.log(nestedArrayString); // Output: '1,2,3,4,5'
+
+example 4 :- 
+const number = 123;
+console.log(number.toString()); // Output: '123'
+
+example 5 :- 
+const booleanValue = true;
+console.log(booleanValue.toString()); // Output: 'true'
+
+example 6:-
+const person = {
+  name: 'Alice',
+  age: 30,
+  toString: function() {
+    return `${this.name}, ${this.age} years old`;
+  }
+};
+
+console.log(person.toString()); // Output: 'Alice, 30 years old'
+
+
+20. valueOf() :  The valueOf() method in JavaScript is used to return the primitive value of an object. This method is usually called internally by JavaScript and is rarely used explicitly in code. For most built-in objects, valueOf() returns the object itself. However, for some objects like Date and Number, valueOf() returns a more meaningful primitive value.
+
+example 1:-
+const date = new Date('2023-05-17T00:00:00Z');
+const primitiveValue = date.valueOf();
+console.log(primitiveValue); // Output: 1684281600000
+For Date ob jects, valueOf() returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+
+
 */
-
-
-
-
-
-
-
-
-
 
 
