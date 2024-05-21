@@ -158,6 +158,11 @@ const str = "Hello, world!";
 const result = str.substring(0);
 console.log(result); // Output: "worldHello, world!"
 
+-------------------
+
+10. replace() : The replace() method in JavaScript is used to replace a specified value (substring or regular expression) within a string with another value. This method does not alter the original string but returns a new string with the specified replacements.
+
+syntax : string.replace(searchValue, newValue)
 
 
 */
