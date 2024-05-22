@@ -164,8 +164,106 @@ console.log(result); // Output: "worldHello, world!"
 
 syntax : string.replace(searchValue, newValue)
 
+searchValue: The value to be replaced. It can be a string or a regular expression.
+newValue: The value to replace the searchValue with. This can be a string or a function that returns the replacement value.
+
+
+const str = "Hello, world!";
+const newStr = str.replace("world", "JavaScript");
+console.log(newStr); // Output: "Hello, JavaScript!"
+
+const text = "The quick brown fox jumps over the lazy dog.";
+
+// Replace a single word
+const newText = text.replace("fox", "cat");
+console.log(newText); // Output: "The quick brown cat jumps over the lazy dog."
+
+// Replace all occurrences of a word using a global regular expression
+const multipleReplacements = text.replace(/the/gi, "a");
+console.log(multipleReplacements); // Output: "A quick brown fox jumps over a lazy dog."
+
+// Using a function as the replacement
+const withFunction = text.replace("fox", (match) => match.toUpperCase());
+console.log(withFunction); // Output: "The quick brown FOX jumps over the lazy dog."
+
+// Replace placeholders in a template
+const template = "Hello, {name}!";
+const filledTemplate = template.replace("{name}", "Alice");
+console.log(filledTemplate); // Output: "Hello, Alice!"
+
+// Remove all vowels from the string
+const noVowels = text.replace(/[aeiou]/gi, "");
+console.log(noVowels); // Output: "Th qck brwn fx jmps vr th lzy dg."
+
+-------------------
+
+11. replaceAll() : In JavaScript, the replace() method can be used with a global regular expression to replace all occurrences of a substring. There isn't a specific replaceAll() method in older versions of JavaScript, but in ES2021, the replaceAll() method was introduced, providing a straightforward way to replace all occurrences of a substring without using regular expressions.
+
+syntax : string.replace(searchValue, newValue)
+
+searchValue: The value to be replaced. It can be a string or a regular expression.
+newValue: The value to replace the searchValue with. This can be a string or a function that returns the replacement value.
+
+
+In JavaScript, the replace() method can be used with a global regular expression to replace all occurrences of a substring. There isn't a specific replaceAll() method in older versions of JavaScript, but in ES2021, the replaceAll() method was introduced, providing a straightforward way to replace all occurrences of a substring without using regular expressions.
+
+Using replace() with a Global Regular Expression
+const str = "Hello, world! Hello, everyone!";
+const newStr = str.replace(/Hello/g, "Hi");
+console.log(newStr); // Output: "Hi, world! Hi, everyone!"
+
+const str = "Hello, world! Hello, everyone!";
+const newStr = str.replaceAll("Hello", "Hi");
+console.log(newStr); // Output: "Hi, world! Hi, everyone!"
+
+-------------------
+
+12. charAt() : the charAt() method returns the character at a specified index in a string.
+
+let text = "hello javascript, welcome to our world vest javascript course";
+let character = text.charAt(9)
+console.log(character);
+
+-------------------
+
+13. charCodeAt() : the charCodeAt() method returns the code of the character at a specified index in a string. the method returns a utf-16 code (an integer 0 between 65533)
+
+let text = "hello 7avascript, welcome to our world vest javascript course";
+let character = text.charCodeAt(6)
+console.log(character);
+
+-------------------
+
+14. at() : at() method returns the character at a specified index in a string. The at() returns the same as cahrAt(). introduced in ES2022.
+
+let text = "hello 7avascript, welcome to our world vest javascript course";
+let result = text.at(-6);
+console.log(result);
+
+note : the at() method is a new addition to javascript it allows the use fo negative indexes while charAt() do not. now you can use myString.at(-2) insted of chatAt(mystring.length-2)
+
+-------------------
+
+15. toUpperCaase() and toLowerCase() : converts the string to uppercase or lowercase
+
+let str = "Javascript";
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+
+-------------------
+
+16. trim() : trim remove whitespace from both ends of the string.
+
+let str = "    JAVASCRIPT    ";
+console.log(str);
+console.log(str.trim());
+
+-------------------
+
+17. split() : splits the string into an array of substrings based on specified delimiter.
+
+let str = "javascript is love";
+let result = str.split(" ");
+console.log(result);
 
 */
-
-
-  
