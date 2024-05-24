@@ -41,9 +41,65 @@ console.log(Math.floor(2.9)); // output : 2
 console.log(Math.floor(-2.4)); // output : -3
 
 5) Math.trunc(x) : Returns the integer part of x
+let trunkValue = Math.trunc(3.7);
+console.log(trunkValue);
 
+
+NOTES :-
+
+-> No matter how many chars are there after decimal they all will always return only number before the decimal.
+-> Round rounds to the nearest integer
+-> floor always rounds downs
+-> ceil always rounds up
+
+
+----------------------------------------
+EXPONENTIAL AND LOGARITHMIC FUNCTIONS :-
+----------------------------------------
+
+1. Math.pow() : The Math.pow() method in JavaScript is used to raise a base number to the power of an exponent. It returns the result of the base raised to the exponent.
+
+syntax : Math.pow(base, exponent)
+
+console.log(Math.pow(2, 3)); // Output: 8 (2^3 = 2 * 2 * 2)
+console.log(Math.pow(5, 2)); // Output: 25 (5^2 = 5 * 5)
+console.log(Math.pow(7, 0)); // Output: 1 (any number to the power of 0 is 1)
+console.log(Math.pow(4, -1)); // Output: 0.25 (4^-1 = 1/4)
+console.log(Math.pow(9, 0.5)); // Output: 3 (square root of 9)
+
+In modern JavaScript (ES6 and later), you can also use the exponentiation operator (**) as an alternative to Math.pow().
+
+console.log(2 ** 3); // Output: 8
+console.log(5 ** 2); // Output: 25
+
+2. Math.sqrt() : Math.sqrt(x) returns the square root of x.
+let squareRoot = Math.sqrt(25);
+console.log(squareRoot);
+
+
+Math.log(x) : Math.log(x) retrns the natural logarithm of x.
+
+let logResult = Math.log(1)
+let logResult2 = Math.log(2)
+console.log(logResult);
+console.log(logResult2);
+
+3. Math.roandom() : Math.ranomo() returns a random number 0 (inclusive) and 1 (exclusive).
+let x = Math.random();
+console.log(x);
+
+examplee :- (generate a random number between zero to nine)
+
+let randomNumber = Math.floor(Math.random()*10);
+console.log(randomNumber);
+
+examplee :- (generate a random number between zero to 10)
+
+let randomNumber = Math.floor(Math.random()*11);
+console.log(randomNumber);
 
 */ 
+
 
 
 
