@@ -215,8 +215,17 @@ console.log(parseDate); // output : 1716731417972
 FEW USEFUL METHODS OF THE DATE OBJECTS IN JAVASCRIPT
 -----------------------------------------------------
 
-*/ 
+let newDate = new Date();
+console.log(Date.now());
+console.log(newDate.getTime());
 
+Date.now() is a static method of the date object.
+Use Date.now() if you want the timestamp right this second. 
+it returns the current timeStamp (number of milliseconds) representing the current moment. 
+use new Date().getTime() if you have an existing date object from elsewhere and want its timestamp.
+
+
+*/ 
 
 
 
