@@ -183,11 +183,41 @@ const date = new Date();
 date.setMilliseconds(1716743118103)
 console.log(date);
 
-*/ 
+-----------------------------------------------------
+FEW USEFUL METHODS OF THE DATE OBJECTS IN JAVASCRIPT
+-----------------------------------------------------
+
+1) toLocalString() : returns a string representing the date time portion of a date object using the current local's conventions.
 
 const date = new Date();
-date.setMilliseconds(1716743118103)
-console.log(date);
+const localString = date.toDateString();
+console.log(localString); // output : current day/month/date/year
+
+2) toLocalDateString() : returns a string representing the date portion of a date object using the current locale's conventions
+
+const date = new Date();
+const localDateString = date.toLocaleDateString();
+console.log(localDateString); // output : current date/month/year
+
+3) toLocaltimeString() : returns a string representing the time porting of a date object using the current locale's conventions.
+
+const date = new Date();
+const localtimeString = date.toLocaleTimeString();
+console.log(localtimeString); // output : current hour/minute/second/meridion
+
+4) parse() : parses a string representation of a date and returns the number of milliseconds since january 1, 1970,
+
+const date = "2024-05-26T13:50:17.972Z";
+const parseDate = Date.parse(date);
+console.log(parseDate); // output : 1716731417972
+
+-----------------------------------------------------
+FEW USEFUL METHODS OF THE DATE OBJECTS IN JAVASCRIPT
+-----------------------------------------------------
+
+*/ 
+
+
 
 
 
