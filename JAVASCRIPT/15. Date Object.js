@@ -58,4 +58,138 @@ console.log(date1);
 
 const curMillisecond = new Date().getTime();
 console.log(curMillisecond);
+
+---------
+NOTES :- 
+---------
+
+1. Javascript counts months from 0 to 1: 
+[January = 0, February = 1, March = 2, April = 3, May = 4, June = 5, July = 6, August = 7, September = 8, October = 9, November = 10, December = 11]
+
+2. Javascript stores dates as Milliseconds: Javascript stores dates as number milliseconds since january 01, 1970.
+
+Date String Format : if the dateString is in a recognizable format, the date object will be created accordingly.
+
+new Date(date string) creates a date object from a date string
+
+const date1 = new Date("2024-01-05"); // year-month-day
+const date2 = new Date("January 5, 2024"); // month day, year
+console.log(date1);
+console.log(date2);
+
+---------------------------------------------------
+JAVASCRIPT GET DATE METHODS / GETTING COMPONENTS:-
+---------------------------------------------------
+
+You can get various components of a date uisng the methods of the date object : in a date object, the date is static.
+
+In javascript, the first day of the week (day 0) is sunday. day of the week (0 for sunday, 1 for monday, _ _ _ _, 6 for saturday);
+
+const currentDate = new Date(); 
+console.log(currentDate)
+
+const year = currentDate.getFullYear();
+console.log(year)
+
+const month = currentDate.getMonth(); // zero based index.
+console.log(month)
+
+const date = currentDate.getDate();
+console.log(date)
+
+const day = currentDate.getDay();
+console.log(day)
+
+---------------------------------------------------
+JAVASCRIPT SET DATE METHODS / SETTING COMPONENTS:-
+---------------------------------------------------
+
+1) setFullYear(yearValue,[, monthValue, [, dayValue]]): sets the full year for a specified date according to local time.
+
+const date = new Date();
+date.setFullYear(2025);
+console.log(date); // date object with the year set to 2025;
+
+2) setMonth(monthValue[, dayValue]): sets the month for a spcified date accoring to local time.
+
+const date = new Date();
+date.setMonth(5); // June (months are zero based)
+console.log(date); // date object with the year set to June;
+ 
+3) setDate(dayValue): sets the day of the month for a spcified date accoring to local time.
+
+const date = new Date();
+date.setDate(15); // June (months are zero based)
+console.log(date); // date object with the day of the month set to 15;
+
+---------------------------------------------------
+JAVASCRIPT GET TIME METHODS / GETTING COMPONENTS:-
+---------------------------------------------------
+
+const currentTime = new Date();
+console.log(currentTime)
+
+1) hours
+const currentTime = new Date();
+const hours = currentTime.getHours();
+console.log(hours)
+
+2) minute
+const currentTime = new Date();
+const minute = currentTime.getMinutes();
+console.log(minute)
+
+3) second
+const currentTime = new Date();
+const second = currentTime.getSeconds();
+console.log(second)
+
+4) time
+const currentTime = new Date();
+const time = currentTime.getTime();
+console.log(time);
+
+---------------------------------------------------
+JAVASCRIPT SET TIME METHODS / SETTING COMPONENTS:-
+---------------------------------------------------
+
+1) setHours(hourValue[, minuteValue[, secondValue[, millisecondValue]]]) : sets the hours for a specied date according to local time.
+
+const date = new Date();
+date.setHours(19)
+console.log(date);
+
+2) setMinute( minuteValue[, secondValue[, millisecondValue]]) : sets the minutes for a specied date according to local time.
+
+const date = new Date();
+date.setMinutes(3)
+console.log(date);
+
+3) setSeconds(secondValue[, millisecondValue]) : sets the second for a specied date according to local time.
+
+const date = new Date();
+date.setSeconds(33)
+console.log(date);
+
+4) setMillisecond(millisecondValue) : sets the millisecond for a specied date according to local time.
+
+const date = new Date();
+date.setMilliseconds(33)
+console.log(date);
+
+5) setTime(timeValue): sets the date object to the time represented by a number of millsecond since january 1, 1970, 00:00:00 utc
+
+const date = new Date();
+date.setMilliseconds(1716743118103)
+console.log(date);
+
 */ 
+
+const date = new Date();
+date.setMilliseconds(1716743118103)
+console.log(date);
+
+
+
+
+
