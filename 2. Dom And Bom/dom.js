@@ -34,10 +34,22 @@ DOM NAVIGATION :-
 
 a) Document.documentElement returns the element that is the root element of the document  (for example, the <html> element for html document.)
 
+let parent = document;
+console.log(parent); // it represent the entire html document.
 
+let docElm = document.documentElement
+console.log(docElm);
 
+let headElement = document.head;
+console.log(headElement);
 
+let bodyElement = document.body;
+console.log(bodyElement);
+
+---------------
+
+b) parentNode / parentElement :- navigate to the parent mode of element. Document and documentFragment nodes can never have parent, so paretnNode will always erturn null. it also returns null if the node has ust been crated and is not yet attached to the tree
 */ 
 
-let parent = document;
-console.log("hi");
+let bodyChile = bodyElement.childNodes;
+console.log(bodyChile);
