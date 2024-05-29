@@ -28,10 +28,16 @@ Here is a types of nodes in js:
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-================
-DOM FILTERING :-
-================
+==================
+DOM NAVIGATION :-
+==================
+
+a) Document.documentElement returns the element that is the root element of the document  (for example, the <html> element for html document.)
+
 
 
 
 */ 
+
+let parent = document;
+console.log("hi");
