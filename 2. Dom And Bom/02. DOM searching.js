@@ -172,7 +172,17 @@ h1.id = "h1"; // creating id dynamicly (e)
 
 INSERT BEFORE 
 
+
+
 */ 
 
+let list = document.getElementById("before");
 
+let item = document.createElement("li");
+
+item.textContent = "new list 5"
+
+let pos = list.firstElementChild;
+
+list.insertBefore(item, pos)
 
