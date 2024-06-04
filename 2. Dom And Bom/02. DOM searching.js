@@ -42,7 +42,66 @@ console.log(querySelectorForTag);
 let querySelectorForAll = document.querySelectorAll("p");
 console.log(querySelectorForAll);
 
+-------------
 
+TRAVERSING ELEMENT IN JS:-
+
+a) parentElement : it is used to select parent element on a selected element.
+
+let elm = document.getElementById("heading");
+console.log(elm);
+
+let parentElm = elm.parentElement;
+console.log(parentElm);
+
+-------------
+
+b) firstElementChild : used to select the first element child of the selected element.
+
+let elm = document.getElementById("intro");
+console.log(elm);
+
+let node = elm.firstElementChild;
+console.log(node);
+
+-------------
+
+c) lastElementChild : used to select the last element child of the selected element.
+
+let elm = document.getElementById("intro");
+console.log(elm);
+
+let node = elm.lastElementChild;
+console.log(node);
+
+-------------
+
+d) children : used to select the all element child of the selected element.
+
+let elm = document.getElementById("intro");
+console.log(elm);
+
+let node = elm.children;
+console.log(node);
+
+-------------
+
+e) previousElementSibling : used to select the previous sibling element of selected element.
+
+let elm = document.getElementById("list-1");
+console.log(elm);
+
+let node = elm.previousElementSibling;
+console.log(node);
+
+-------------
+
+f) nextElementSibling : used to select the next sibling element of selected element.
 
 */ 
 
+let elm = document.getElementById("list-1");
+console.log(elm);
+
+let node = elm.nextElementSibling;
+console.log(node);
