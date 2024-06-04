@@ -42,7 +42,7 @@ console.log(querySelectorForTag);
 let querySelectorForAll = document.querySelectorAll("p");
 console.log(querySelectorForAll);
 
--------------
+---------------------------------------------------------------------
 
 TRAVERSING ELEMENT IN JS:-
 
@@ -98,10 +98,81 @@ console.log(node);
 
 f) nextElementSibling : used to select the next sibling element of selected element.
 
-*/ 
-
 let elm = document.getElementById("list-1");
 console.log(elm);
 
 let node = elm.nextElementSibling;
 console.log(node);
+
+---------------------------------------------------------------------
+
+MANIUPLATING HTML :-
+
+a) innerHTML : It is used to get and set the innerHTML of the select document (of its child element).
+
+let elm = document.getElementById("divOne");
+console.log(elm);
+
+let content = elm.innerHTML; // getting
+console.log(content);
+
+elm.innerHTML = "<h1>THIS IS HEADING ONE</h1>" // setting
+
+-------------
+
+b) innerText : it is used to get and set the inner text of the selected element.
+
+let elm = document.getElementById("para");
+console.log(elm);
+
+let content = elm.innerText; // getting
+console.log(content);
+
+elm.innerText = "THIS IS HEADING ONE" // setting
+
+-------------
+
+c) textContent : it is used to get and set the text contentof the selected element.
+
+let elm = document.getElementById("para");
+console.log(elm);
+
+let content = elm.textContent; // getting
+console.log(content);
+
+elm.textContent = "this is text by text content" // setting
+
+---------------------------------------------------------------------
+
+CREATING AND APPENDING ELEMENT IN HTML
+
+a) createElement : this method is used to create element dinimacly expecting one parameter which is the tag name we want to create.
+
+b) createTextNode : this metod is used to ceate a text node for the element where we want to append this.
+
+c) appendChild : this is used to append the created element or text into the selected element.
+
+d) className : it is used to add class to selected element. we can add multiple classes.
+
+e) id : it is used to add id to selected element.
+
+let elm = document.getElementById('divOne'); // selecting the element
+
+let h1 = document.createElement('h1'); //creating element (a)
+
+let text = document.createTextNode("this is h1 tag inserted by js") // creating textnode for element (b)
+
+elm.appendChild(h1).appendChild(text); // appending h1 to elm and then appending text to h1.(c)
+
+h1.className = "try catch"; // creating clss dynamicly. can add multiple casses with this (d)
+
+h1.id = "h1"; // creating id dynamicly (e)
+
+-----------------------
+
+INSERT BEFORE 
+
+*/ 
+
+
+
