@@ -172,17 +172,133 @@ h1.id = "h1"; // creating id dynamicly (e)
 
 INSERT BEFORE 
 
+let list = document.getElementById("before"); // selecting element
+
+let item = document.createElement("li"); item.textContent = "new list 5" // creating new element
+
+let pos = list.firstElementChild; // seleting pisition of the wehere we want to insert element before element.
+
+list.insertBefore(item, pos) // this is insert before it will insert the element before the selected elemnt 
+
+-----------------------
+
+DELETING CHILD ELEMENT
+
+let list = document.querySelector(".before"); // selecting element
+
+let elm = list.firstElementChild;
+console.log(elm);
+
+
+list.removeChild(elm) // remove child property used to remove child element of selected parent element it expect one argument which is the selected child element
+
+-----------------------
+
+CLONE ELEMENT
+
+cloneNode = it is used to clone the element to clone select the element we want to clone and call it with the .notation with the element we want to clone. it expect one argument true if we want to clone it children also. and it can be empty for not cloneing children.
+
+let list = document.querySelector(".before"); // selecting element
+
+let cloneElm1 = list.cloneNode();
+console.log(cloneElm1);
+
+let cloneElm = list.cloneNode(true);
+console.log(cloneElm);
+
+document.body.appendChild(cloneElm).id = 'before1'
+
+-----------------------
+
+REPLACE ELEMENT
+
+replaceChild : it is used to replace childElement it expect two argument, first element to be place ,second element to home replace with.
+
+let list = document.querySelector(".before"); // selecting element
+
+let itemNew = document.createElement("li");
+itemNew.textContent = "services";
+console.log(itemNew);
+
+let replace = list.firstElementChild;
+
+list.replaceChild(itemNew , replace);
+
+-----------------------
+
+INSERT ADJECENT HTML
+
+insertAdjacentHTML : it is used to insert html element before and after of select elements's sratring and closing tag. it expect two argument first where to insert and sect what to insert.
+
+let elm = document.querySelector(".adjecent"); // selecting the element
+
+let pBeforeBegin = "<p>this is beforebegin p</p>" 
+let pafterbegin = "<p>this is afterbegin p</p>" 
+let pbeforeend = "<p>this is beforeend p</p>" 
+let pafterend = "<p>this is afterend p</p>" 
+
+elm.insertAdjacentHTML('beforebegin', pBeforeBegin)
+elm.insertAdjacentHTML("afterbegin", pafterbegin)
+elm.insertAdjacentHTML('beforeend', pbeforeend)
+elm.insertAdjacentHTML('afterend', pafterend)
+
+-----------------------
+
+CHANGING ATTRUBUTE OF AN ELEMENT
+
+setAttribute = it is used to set the attribute and its value to html element it expect two argument first attribute which we want to set and second it's value.
+let btn = document.getElementById("btn");
+btn.setAttribute("class", "button");
+
+getAttribute it is used to get the value of attribute of given attribute name in the argument.
+let btn = document.getElementById("btn");
+console.log(btn.getAttribute("id"));
+
+removeAttribute = it is used to remove attribute it expect one argument which is the name of attribute which we want to remove.
+let btn = document.getElementById("btn");
+btn.removeAttribute("name")
+
+hasAttribute = it is used to get the presence of attribute it expect one argument which is the name of arrtibute. it return true if present and false is not.
+let btn = document.getElementById("btn");
+console.log(btn.hasAttribute("id"));
+
+-----------------------
+
+SETTING INLINE STYLE IN HTML ELEMENT
+
+style.cssText it is used to add inline css in html element, chain it with select element and assing the style with in a string form.
+
+let element = document.querySelector(".inLine");
+console.log(element);
+
+element.style.cssText  = "background-color: red; color: white;"
+
+
+let element = document.querySelector(".inLine");
+console.log(element);
+
+element.style.cssText  = "background-color: red; color: white;" // and if we don't want to override the exexting inlining style of element chain it with plus operator (+=) because if there allready a inline style cssText property will override it.
+
+-----------------------
+
+getComputedStyle = it is used to get computed style of html elemtn.
+
+---------------------
+
+className = it is used to add class to  html elemtnt
+
+classList = it is used to get the list of exisisting class in html element
+
+classList.replace = it is used to replace class
+
+classList.contains = it is used to know the existence of class
+
+classList.toggle = it is used to toggle the class
+
+---------------------
+
+
 
 
 */ 
-
-let list = document.getElementById("before");
-
-let item = document.createElement("li");
-
-item.textContent = "new list 5"
-
-let pos = list.firstElementChild;
-
-list.insertBefore(item, pos)
 

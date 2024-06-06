@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,84 +8,93 @@
 
     <!-- stylesheet link -->
     <link rel="stylesheet" href="/2. Dom And Bom/dom.css">
+
+    <style>
+        body{
+            background-color: rgb(19, 18, 18);
+            color: white;
+        }
+    </style>
+
 </head>
+
 <body>
-    
 
-<!-- ================================================================================================================================= -->
-<!-- DOCUMENT OBJECT MODEL STARTS -->
-<!-- ================================================================================================================================= -->
 
-<!-- 1) DOM NAVIGATION STARTS -------------------------------------------------------------------------------------------------------  -->
+    <!-- ================================================================================================================================= -->
+    <!-- DOCUMENT OBJECT MODEL STARTS -->
+    <!-- ================================================================================================================================= -->
 
-<!-- <h1>THIS IS FOR DOM NAVIAGTION</h1>
+    <!-- 1) DOM NAVIGATION STARTS -------------------------------------------------------------------------------------------------------  -->
+
+    <!-- <h1>THIS IS FOR DOM NAVIAGTION</h1>
 <p>understanding the tree structure of dom</p>
 <p>it's easy. Help js to communicate with HTML</p> -->
 
-<!-- DOM NAVIGATION ENDS ------------------------------------------------------------------------------------------------------------  -->
+    <!-- DOM NAVIGATION ENDS ------------------------------------------------------------------------------------------------------------  -->
 
 
-<!-- NEW SECTION STARTS  ------------------------------------------------------------------------------------------------------------- -->
+    <!-- NEW SECTION STARTS  ------------------------------------------------------------------------------------------------------------- -->
 
 
-<!-- 2) DOM SEARCHING, TRAVERSING , MANIUPLATING STARTS -----------------------------------------------------------------------------  -->
+    <!-- 2) DOM SEARCHING, TRAVERSING , MANIUPLATING STARTS -----------------------------------------------------------------------------  -->
 
-<div id="divOne">
+    <div id="divOne">
 
-    <p>this is paragraph tag</p>
+        <p>this is paragraph tag</p>
 
-    <h1 id="heading">THIS IS H1</h1>
-    <ul class="list">
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>four</li>
-    </ul>
+        <h1 id="heading">THIS IS H1</h1>
+        <ul class="list">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
 
-    <div id="intro">
-        <li>list1</li>
-        <li id="list-1">list2</li>
-        <li>list3</li>
-        <li>list4</li>
+        <div id="intro">
+            <li>list1</li>
+            <li id="list-1">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </div>
+
     </div>
 
-</div>
+    <ul class="before">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
 
-<ul class="before">
-    <li>list 1</li>
-    <li>list 2</li>
-    <li>list 3</li>
-    <li>list 4</li>
-</ul>
+    <p id="para">understanding the tree structure of dom</p>
+    <p>it's easy. Help js to communicate with HTML</p>
 
-<p id="para">understanding the tree structure of dom</p>
-<p>it's easy. Help js to communicate with HTML</p>
+    <hr>
+    <p>INSERT ADJECENT HTML</p>
 
-<!-- DOM SEARCHING, TRAVERSING , MANIUPLATING STARTS -----------------------------------------------------------------------------------------  -->
+    <!-- insert adjecent html -->
 
+    <!-- before begining -->
+    <div class="adjecent"> <!-- if selected -->
+        <!-- after begining -->
 
+        <h2>heading</h2>
+        <p>this is para tag</p>
 
+        <!-- before end -->
+    </div>
+    <!-- after end -->
 
+    <hr> <p>attributes methods</p>
 
+    <button id="btn" name="button">send</button>
 
+    <hr> <p>changing inline style</p>
 
+    <div class="inLine">THIS IS DIV FOR STYLING</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- DOM SEARCHING, TRAVERSING , MANIUPLATING STARTS -----------------------------------------------------------------------------------------  -->
 
 
 
@@ -102,9 +112,33 @@
 
 
 
-<!-- ================================================================================================================================= -->
-<!-- DOCUMENT OBJECT MODEL ENDSS -->
-<!-- ================================================================================================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================================================================================================================================= -->
+    <!-- DOCUMENT OBJECT MODEL ENDSS -->
+    <!-- ================================================================================================================================= -->
 
 
 </body>
