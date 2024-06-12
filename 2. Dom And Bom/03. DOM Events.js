@@ -54,6 +54,8 @@ drop: Triggered when a dragged element is dropped on a drop target.
 
 ------------------------------------------------------------------------------------------------------------
 
+TIME OUT AND TIME INTERVAL
+
 */ 
 
 
