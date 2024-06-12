@@ -56,6 +56,66 @@ drop: Triggered when a dragged element is dropped on a drop target.
 
 TIME OUT AND TIME INTERVAL
 
+TIME OUT AND ITME INTERVL
+
+setTimeout and clearTimeout in JavaScript
+In JavaScript, the setTimeout function is used to execute a piece of code or a function after a specified delay. The clearTimeout function is used to cancel a timeout that was previously set with setTimeout.
+
+setTimeout
+The setTimeout function takes two arguments:
+
+The function to be executed.
+The delay in milliseconds before the function is executed.
+
+clearTimeout
+The clearTimeout function cancels a timeout that was previously set with setTimeout. This is useful if you need to prevent the function from being executed.
+timeoutID: The identifier of the timeout you want to cancel. This ID is returned by setTimeout.
+
+
+let timeOUtId = setTimeout(()=>{
+    console.log("hi");
+}, 5000)
+
+clearTimeout(timeOUtId)
+
+----------------------
+
+setInterval : In JavaScript, the setInterval function is used to repeatedly execute a piece of code or a function at specified intervals
+
+setInterval
+The setInterval function takes two arguments:
+
+The function to be executed.
+The interval in milliseconds between each execution of the function.
+Syntax : var intervalID = setInterval(function, interval);
+function: The function to be executed at each interval.
+interval: The time, in milliseconds, between each execution of the function.
+
+function greet() {
+    console.log('Hello, world!');
+}
+
+var intervalID = setInterval(greet, 2000); // Execute the greet function every 2 seconds
+
+function greet() {
+    console.log('Hello, world!');
+}
+
+var intervalID = setInterval(greet, 2000);
+
+clearInterval = The clearInterval function is used to stop an interval that was previously set with setInterval.
+
+function greet() {
+    console.log('Hello, world!');
+}
+
+var intervalID = setInterval(greet, 2000); // Execute the greet function every 2 seconds
+
+setTimeout(function() {
+    clearInterval(intervalID);
+}, 10000); // Stop the interval after 10 seconds
+
+
 */ 
 
 
