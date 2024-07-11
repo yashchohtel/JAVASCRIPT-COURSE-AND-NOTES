@@ -62,3 +62,4 @@ Scope chaining is the process by which javascript, when looking for the value of
 Key concept: variables in inner scopes have access to variables in their outer scopes, creating a chain of accessible scopes.
 
 */ 
+
