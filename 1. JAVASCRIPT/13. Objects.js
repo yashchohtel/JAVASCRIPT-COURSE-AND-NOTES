@@ -144,6 +144,118 @@ John Doe is a Software Developer
 Jane Smith is a Graphic Designer
 Emily Johnson is a Project Manager
 
+-----------------------------------
+
+USEFUL OBJECTS METHODS :-
+
+1. Object.Key(): Returns an array contaiing the nams of all enumerable own properties of an object.
+
+const product = {
+  id: 1,
+  name: "laptop",
+  category: "computers",
+  brand: "exampleBrand",
+  price: 9999.99,
+  stoct: 50,
+  description:
+    "Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD",
+  image: "image link here",
+};
+
+console.log(Object.keys(product)) // [("id", "name", "category", "brand", "price", "stoct", "description", "image")]; 
+
+2. Object.values(): returns an array containing the values of all enumerable own properties of an object. 
+
+const product = {
+  id: 1,
+  name: "laptop",
+  category: "computers",
+  brand: "exampleBrand",
+  price: 9999.99,
+  stoct: 50,
+  description:
+    "Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD",
+  image: "image link here",
+};
+
+console.log(Object.values(product)) // [1,'laptop','computers','exampleBrand',9999.99,50,'Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD','image link here']
+
+3. Object.entries(): returns an array containing arrays of key-value pairs of each enuerabme property as an own property.
+
+const product = {
+  id: 1,
+  name: "laptop",
+  category: "computers",
+  brand: "exampleBrand",
+  price: 9999.99,
+  stoct: 50,
+  description:
+    "Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD",
+  image: "image link here",
+};
+
+console.log(Object.entries(product))
+
+// output: 
+[
+  (["id", 1],
+  ["name", "laptop"],
+  ["category", "computers"],
+  ["brand", "exampleBrand"],
+  ["price", 9999.99],
+  ["stoct", 50],
+  [
+    "description",
+    "Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD",
+  ],
+  ["image", "image link here"])
+];
+
+4. Object. hasOwnProperty(): Returns a boolean indicating whether the object has the specified property as an own property.
+
+const product = {
+  id: 1,
+  name: "laptop",
+  category: "computers",
+  brand: "exampleBrand",
+  price: 9999.99,
+  stoct: 50,
+  description:
+    "Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD",
+  image: "image link here",
+};
+
+console.log(product.hasOwnProperty("name")) // true
+console.log(product.hasOwnProperty("age")) // false
+
+
+5. Object.assign(): Copies the values of all enmerable own properties from one or more source objects to a target object.
+
+const target = {a:1, b:2};
+const source = {b:3, c:4};
+const merteObject = Object.assign(target, source);
+console.log(merteObject);
+console.log(target);
+console.log(source);
+
+6. Object.freeze(): FReezes an object, preventing new propertis from being added to it and existing propertis from being modifid or deleted.
+
+const product = {
+  id: 1,
+  name: "laptop",
+  category: "computers",
+  brand: "exampleBrand",
+  price: 9999.99,
+  stoct: 50,
+  description:
+    "Powerful laptop with a hexa-core ryzen9 processor, 8gb RAM, 500gb SSD",
+  image: "image link here",
+};
+
+Object.freeze(product);
+product.id = "123";
+console.log(product);
+
 
 */
 
