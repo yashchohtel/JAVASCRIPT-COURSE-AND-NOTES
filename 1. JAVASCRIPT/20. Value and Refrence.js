@@ -74,20 +74,5 @@ Efficient memory usage and performance considerations.
 Writing functions and methods that correctly handle different types of data.
 By being aware of how value and reference types work in JavaScript, you can better manage variables and data structures in your code.
 
-
-
-
-
-
-
-
 */ 
 
-
-let a = [1,2,3,4,5] // original array
-console.log(a); // logining original array
-let b = a; // assigning a to b (it pass the refferece of a from the memroy)
-console.log(b); //  logining b array
-b.push(6) // adding value to b
-console.log(b); // again logining b array output: [ 1, 2, 3, 4, 5, 6 ]
-console.log(a); // again loging original array output: [ 1, 2, 3, 4, 5, 6 ] here the original array is changed because the change occure in the memory where it is store.
