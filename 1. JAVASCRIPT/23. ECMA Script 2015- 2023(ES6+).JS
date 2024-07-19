@@ -47,8 +47,8 @@ String Interpolation :- Template strings supports strin interplation, allowing y
 let age = 30;
 console.log(`i am ${age} years old`);
 
-====================================================================================
-====================================================================================
+
+========================
 
 2]. DEFAULT PARAMETERS :-
 
@@ -64,8 +64,7 @@ console.log(num1+num2);
     
 sum();
     
-====================================================================================
-====================================================================================
+========================
 
 3]. ARROW FUNCTION :-
 
@@ -166,8 +165,7 @@ let isPalindrome = (str) => {
 
 isPalindrome("malayalam");
 
-====================================================================================
-====================================================================================
+========================
 
 4]. OBJECT PROPERTIES
 
@@ -184,8 +182,7 @@ console.log(person1);
 
 Insted of specifing name:name and age:age, you can simply use name and ag directly withn the object literal, thansks to es6 sorthand property natation.
 
-====================================================================================
-====================================================================================
+========================
 
 5]. DESTRUCTURING 
 
@@ -348,8 +345,7 @@ function greet({ name, age }) {
 }
 greet({ name: "Alice", age: 25 }); // Hello, Alice. You are 25 years old.
 
-====================================================================================
-====================================================================================
+========================
 
 7]. SPREAD OPERATOR 
 
@@ -424,8 +420,7 @@ let str = "hello";
 let chars = [...str];
 console.log(chars); // ['h', 'e', 'l', 'l', 'o']
 
-====================================================================================
-====================================================================================
+========================
 
 8]. REST PARAMETER 
 
@@ -469,6 +464,336 @@ function wrong1(...one, ...wrong){}
 function wrong2(...one, arg1, arg2){}
 function right1(arg1, arg2, ...last){}
 
-*/ 
+====================================================================================
+====================================================================================
 
+ES7 [2016]
+
+9]. EXPONENTATION OPERATOR
+
+ES7 introduces a new mathamatical operator called expoenetation operator this is similor to using math.pow() method. 
+
+The exponentiation operator (**) in JavaScript is used to raise a number to the power of another number. It provides a concise and readable way to perform exponentiation operations. This operator was introduced in ECMAScript 2016 (ES7).
+
+Syntax : The syntax for the exponentiation operator is straightforward:
+
+base ** exponent : Where base is the number you want to raise to a power, and exponent is the power to which you want to raise the base.
+
+console.log(2 ** 3); // 8
+console.log(5 ** 2); // 25
+console.log(10 ** -1); // 0.1
+
+====================================================================================
+====================================================================================
+
+ES8 [2017]
+
+10]. String padding :-
+
+String padding in javascript is a way to add extra characters (like spaces) to a string to make it a specific length.
+
+Use Case : makes formattign text easier and more perdictable, especially for tabels. alignments, and ui elements. No more messy, unveven lnes disrupting your visual spells.
+
+using padStart() to pad from the beginning:
+
+const value = "yash";
+const paddedValue = value.padStart(18);
+console.log(paddedValue);
+console.log(paddedValue.length);
+
+usind padStart() to pad from the last:
+
+const value = "yash";
+const paddedValue = value.padEnd(18);
+console.log(paddedValue);
+console.log(paddedValue.length);
+
+Key points :-
+
+Both padStart() and end() create a new padded string without modifying the original one.
+. targetLength: the total length of the padded string.
+. padString(potional) : string to use for padding (default space)
+
+if the original string is already longer than equal to targetLength it's returned as it is.
+
+========================
+
+11]. TRAILING COMMAS :-
+
+This feature allows to have traillin commas in function declarations, functions calls, array litral & object literal:
+
+function greet(name, age,){
+  console.log(`hello ${name}, your are ${age} years old.`);
+}
+
+greet("john", 30)
+
+====================================================================================
+====================================================================================
+
+ES9 [2018]
+
+
+====================================================================================
+====================================================================================
+
+ES10 [2019]
+
+12]. ARRAY.FLAT AND ARRAY.FLATMAP :-
+
+flat() : The Array.prototype.flat() method in JavaScript is used to create a new array with all sub-array elements concatenated into it recursively up to a specified depth. This method is particularly useful for flattening nested arrays.
+
+syntax : 
+
+array.flat(depth);
+depth (optional): The depth level specifying how deep a nested array structure should be flattened. Defaults to 1.
+
+-------
+ 
+const arr1 = [1, 2, [3, 4]];
+const flattened1 = arr1.flat();
+console.log(flattened1); // Output: [1, 2, 3, 4]
+
+-------
+ 
+Specifying Depth
+
+const arr2 = [1, 2, [3, 4, [5, 6]]];
+const flattened2 = arr2.flat(1);
+console.log(flattened2); // Output: [1, 2, 3, 4, [5, 6]]
+
+const flattened3 = arr2.flat(2);
+console.log(flattened3); // Output: [1, 2, 3, 4, 5, 6]
+
+-------
+ 
+Flattening Deeply Nested Arrays
+
+const arr3 = [1, [2, [3, [4, [5]]]]];
+const flattened4 = arr3.flat(Infinity);
+console.log(flattened4); // Output: [1, 2, 3, 4, 5]
+
+-------
+
+Handling Empty Slots
+The flat() method also removes empty slots in arrays:
+
+const arr4 = [1, 2, , 4, 5];
+const flattened5 = arr4.flat();
+console.log(flattened5); // Output: [1, 2, 4, 5]
+
+========================
+
+flatMap() : 
+The Array.prototype.flatMap() method in JavaScript is a combination of the map() method followed by the flat() method with a depth of 1. It first applies a function to each element of the array, and then flattens the result by one level. This method is particularly useful for situations where you want to map each element to an array and then flatten the resulting arrays into a single array.
+
+Syntax
+
+array.flatMap(callback, thisArg);
+
+const arr1 = [1, 2, 3, 4];
+
+const result1 = arr1.flatMap(x => [x * 2]);
+console.log(result1); // Output: [2, 4, 6, 8]
+
+
+const arr2 = [1, 2, 3, 4];
+const result2 = arr2.flatMap(x => [[x * 2]]);
+console.log(result2); // Output: [[2], [4], [6], [8]]
+
+========================
+
+13]. Object.fromEntries()
+
+Objects have an entries() method, since es2017 it returs an array containing all the boject own propertes, as an array of [key, value] pairs:
+
+const person = {name: "vinod", age: 30};
+const entries = Object.entries(person);
+console.log(entries);
+
+es2019 introduces a new object, from entries() method, which can create a new object from such array of properties:
+
+let perArr= [ [ 'name', 'vinod' ], [ 'age', 30 ] ];
+const entries = Object.fromEntries(perArr);
+console.log(entries);
+
+========================
+
+14]. strimSTart() & trimEnd()
+
+In JavaScript, the trimStart() and trimEnd() methods are used to remove whitespace characters from the beginning and the end of a string, respectively. These methods are particularly useful for cleaning up input data where extra spaces might be present.
+
+trimStart() Method
+The trimStart() method removes whitespace from the beginning of a string. It does not modify the original string but returns a new string with the leading whitespace removed.
+
+Syntax
+str.trimStart()
+
+Example
+const str = '   Hello World!   ';
+const trimmedStart = str.trimStart();
+console.log(trimmedStart); // Output: 'Hello World!   '
+
+--------------
+
+trimEnd() Method
+The trimEnd() method removes whitespace from the end of a string. Like trimStart(), it does not modify the original string but returns a new string with the trailing whitespace removed.
+
+
+Syntax
+str.trimEnd()
+
+Example
+const str = '   Hello World!   ';
+const trimmedEnd = str.trimEnd();
+console.log(trimmedEnd); // Output: '   Hello World!'
+
+-----------------
+
+Combining trimStart() and trimEnd()
+If you need to remove whitespace from both the beginning and the end of a string, you can combine trimStart() and trimEnd() methods or use the trim() method which removes whitespace from both ends.
+
+Example
+const str = '   Hello World!   ';
+const trimmed = str.trimStart().trimEnd();
+console.log(trimmed); // Output: 'Hello World!'
+
+const fullyTrimmed = str.trim();
+console.log(fullyTrimmed); // Output: 'Hello World!'
+
+===========================
+
+15]. SYMBOL DATATYPE
+
+In javascript, a symbol is a primitive data type introduced in ECMAStript 2015 (ES6). it represents a unique identifier that is immutable and guaranteed to be unique. symbols are often used as property keys in objects to avoid naming conflicts.
+
+The symbol.prototype.description property is a new feature indroduced in es10 it allows you to retireve the description of a symbol. when you create a symbol, you can optionallly provide a description as its parameter. The description property lets you access this desciption. 
+
+const mySyombal = Symbol('this is my symbol');
+console.log(mySyombal.description);
+console.log(typeof mySyombal);
+
+====================================================================================
+====================================================================================
+
+ES11 [2020]
+
+16]. BIGINT 
+
+In JavaScript, BigInt is a built-in object that provides a way to represent whole numbers larger than the range supported by the Number data type. Introduced in ECMAScript 2020 (ES11), BigInt allows you to work with arbitrarily large integers, which is particularly useful for cryptographic applications, scientific calculations, and working with large datasets.
+
+const bigIntLiteral = 1234567890123456789012345678901234567890n;
+console.log(bigIntLiteral); // Output: 1234567890123456789012345678901234567890n
+
+const bigIntFunction = BigInt("1234567890123456789012345678901234567890");
+console.log(bigIntFunction); // Output: 1234567890123456789012345678901234567890n
+
+
+const bigIntLiteral = 1234567890123456789012345678901234567890n;
+console.log(bigIntLiteral); // Output: 1234567890123456789012345678901234567890n
+
+const bigIntFunction = BigInt("1234567890123456789012345678901234567890");
+console.log(bigIntFunction); // Output: 1234567890123456789012345678901234567890n
+
+-----------------
+
+Operations with BigInts
+You can perform arithmetic operations with BigInt values, similar to Number values. However, you cannot mix BigInt and Number values directly in operations; you must explicitly convert one type to the other.
+
+const a = 123456789012345678901234567890n;
+const b = 987654321098765432109876543210n;
+
+const sum = a + b;
+const difference = b - a;
+const product = a * b;
+const quotient = b / a; // Division results in the nearest integer
+const remainder = b % a;
+
+console.log(sum); // Output: 1111111110111111111011111111100n
+console.log(difference); // Output: 864197532086419753208641975320n
+console.log(product); // Output: 121932631356500531591068431581771069347203169112635269000n
+console.log(quotient); // Output: 8n
+console.log(remainder); // Output: 9000000000900000000090n
+
+===========================
+
+17]. NULLISH COALESCING OPERATOR ??
+
+In js, the nullish coalishing operator (??) is a logical operator that provides a consise way to handle nullish (null undefined) values. it returns its right-hand operand when it left-hand operand is null or undefined otherwise it returns the left-hand operand.
+
+let favNum = 0; // falsy
+userFavNum = favNum || 10;
+userFavnum2 = favNum ?? 10;
+console.log(userFavNum);
+console.log(userFavnum2);
+
+===========================
+
+18]. OPETIONAL CHANING OPERATOR (?.)
+
+it provides a conside way to access properties of an object without about the existence of intremediate properties. it's particularly usefull when working with nested objects or accessing properties of  objects that may be null or undefined.
+
+
+const person = {
+
+  name: "john",
+  address: {
+    city: "new york",
+    zipCode: 12345,
+  },
+
+};
+
+const city = person.address ? person.city : "city is not present"
+const city2 = person.address?.city ?? "city is not present"
+console.log(city);
+
+====================================================================================
+====================================================================================
+
+ES12 [2021]
+
+19]. LOGICAL ASSIGNMENT OPERATORS (||=, &&+, ??=)
+
+===========================                                                                                                                                                                                        
+20]. NUMERIC SEPRATORS
+
+This feature allows underscroes (_) to be used as spearatrs within numeric leterals to improve readability.
+
+const bigNum = 1_000_000_000_000;
+console.log(bigNum);
+
+====================================================================================
+====================================================================================
+
+ES13 [2022]
+
+Before ES2033, square bracket notation was used to fetch a particular element in an array. This method is straight forward unless you need to perform a backword iteration, i.e. negative indexing. In the case of negative indexing, the common practice was to use arr[arr.length-N], where array length is referred to and indexed from the end.
+
+The .at() method introduced n ES2022. has simplified this process. in a case of positive indexing, .at() will work thesame as the square brackets. but for negative indexing, the .at() method allows starting the iteration from the end.
+
+
+const array = [1,2,3,4,5,6,7];
+console.log(array.at(-2));
+
+===========================    
+
+Object.hasOwn() is a static method that you can use to check if a property exists in an object or not. it returns true if the specified object contains the indicated property as its own, and if the porperty is inherited or dosen't exist, it returns false. this method takes the object as the fist argument and the proeprty you want to check as the second.
+
+Object.HasOwn is the intended alternative fot the object.prototype.hasOwnProperty mehhod. although object.prototype.hasOwnProperty has been in javascript specification for quite a time, it has some drawbacks.
+
+const book = {
+  name : 'js mastery',
+  page : 100,
+}
+
+console.log(book.hasOwnProperty("name"));
+console.log(Object.hasOwn(book, "name"));
+
+====================================================================================
+====================================================================================
+
+ES14 [2023]
+
+*/
 
