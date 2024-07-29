@@ -7,6 +7,16 @@ Key Concepts of Promises
  -Fulfilled: The operation completed successfully.
  -Rejected: The operation failed.
 
+
+const promise = new Promise(function(resolve,reject){
+    your code here
+})
+
+Here Promise (keyword) is promise constructor
+function inside a promise in executer function
+resolve is a function to call on sucessful completion of an operation 
+reject is a function to call if a operation fails (error)
+
 -----------------------
 
 Creating a Promise : A promise is created using the Promise constructor, which takes a function (executor) that accepts two arguments: resolve and reject.
@@ -359,5 +369,10 @@ Promise.allSettled([myPromiseOne, myPromiseTwo, myPromiseThree])
   console.error(reject);
 }))
 
+-----------------------
+
 */
+
+
+
 

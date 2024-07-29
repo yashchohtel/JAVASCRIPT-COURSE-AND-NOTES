@@ -655,4 +655,19 @@ For Date ob jects, valueOf() returns the number of milliseconds since January 1,
 
 */
 
+let monitors = [
+  {name:"Benq", price:6500},
+  {name:"samsung", price:12000},
+  {name:"LG Curved", price:29000},
+  {name:"DELL 4K", price:62000},
+  {name:"Apple Studio Display", price:159000},
+]
 
+
+let primeDay = monitors.map((value)=>{
+  return {name:value.name, price:value.price/2}
+}).reduce((acc,curElm)=>{
+  return acc + curElm.price;
+},0)
+
+console.log(primeDay);

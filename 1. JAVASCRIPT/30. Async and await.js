@@ -109,6 +109,39 @@ async function doSomething() {
 
 doSomething();
 
+-----------------
+
+FETCHING API WITH ASYNC AWAIT :-
+
+example 1 :-
+async function fetching() {
+  let response = await fetch("https://jsonplaceholder.typicode.com/users");
+  let convertedResponse = await response.json();
+  console.log(convertedResponse);
+}
+fetching();
+
+
+example 2 :-
+
+async function fetching(){
+    let response = await fetch("https://datausa.io/api/data?drilldowns=Nation&measures=Population");
+    let conResponse = await response.json();
+    console.log(conResponse.data[1]);
+}
+
+fetching();
+
+example 3 :-
+
+async function fetching(){
+    let response = await fetch("https://catfact.ninja/fact");
+    let conResponse = await response.json();
+    console.log(conResponse.fact);
+}
+
+fetching();
+
 */
 
 
