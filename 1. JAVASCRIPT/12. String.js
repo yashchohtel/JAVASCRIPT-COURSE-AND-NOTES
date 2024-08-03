@@ -272,4 +272,16 @@ let str = "javascript is love";
 let result = str.split(" ");
 console.log(result);
 
+17. split() : splits the string into an array of substrings based on specified delimiter.
+
+let str = "javascript is love";
+let result = str.split(" ");
+console.log(result);
+
+17. split() : splits the string into an array of substrings based on specified delimiter.
+
+let str = "javascript is love";
+let result = str.split(" ");
+console.log(result);
+
 */
