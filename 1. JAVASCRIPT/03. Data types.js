@@ -236,7 +236,36 @@ console.log(typeof(a));
 console.log(Boolean(a));
 console.log(typeof(Boolean(a)));
 
-*/ 
+----------------------------------------
 
+SET
+
+In JavaScript, a Set is a built-in object that allows you to store unique values of any type, whether primitive values or object references. Sets are particularly useful when you need to ensure that a collection of values does not contain duplicates.
+
+
+let myset = new Set([1,2,3,4,5,5])
+console.log(myset);
+
+----------------------------------------
+
+MAP
+
+In JavaScript, a Map is a built-in object that allows you to store key-value pairs and remembers the original insertion order of the keys. Unlike regular objects, which only allow strings and symbols as keys, Map objects can use any value (including functions, objects, and primitive values) as either a key or a value.
+
+Creating a Map
+You can create a new Map using the Map constructor:
+
+
+const myMap = new Map();
+You can also initialize a map with an array of key-value pairs:
+
+
+const myMap = new Map([
+  ['key1', 'value1'],
+  ['key2', 'value2']
+]);
+console.log(myMap); // Output: Map(2) { 'key1' => 'value1', 'key2' => 'value2' }
+
+*/ 
 
 
