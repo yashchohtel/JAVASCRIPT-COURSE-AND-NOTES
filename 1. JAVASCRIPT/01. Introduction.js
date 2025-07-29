@@ -91,4 +91,6 @@ Rules and naming convention for writing syntax in javascript
 
 Console in Javascript :- The Console can be used to log information as part of the JavaScript development process, as well as allow you to interact with a web page by carrying out JavaScript expressions within the page's context. Essentially, the Console provides you with the ability to write, manage, and monitor JavaScript on demand. It also shows the error of code. 
 
+
+
 */
