@@ -1,4 +1,5 @@
 
+
 /*
 
 DATA TYPES IN JAVASCRIPT :- A data type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data. Most programming languages support various types of data, including integer, real, character or string, and Boolean. Data types in JavaScript define the type of value that a variable can store.
